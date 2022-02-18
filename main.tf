@@ -1,5 +1,5 @@
 provider "aws" {
-  region = var.region
+  region = var.ap-northeast-1
 }
 
 data "aws_ami" "ubuntu" {
@@ -15,7 +15,7 @@ data "aws_ami" "ubuntu" {
     values = ["hvm"]
   }
 
-  owners = ["099720109477"] # Canonical
+  owners = ["941320131365"] # Canonical
 }
 
 resource "aws_instance" "ubuntu" {
